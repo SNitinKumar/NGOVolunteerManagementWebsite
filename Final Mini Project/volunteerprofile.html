@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume</title>
+    <style>
+        body {
+            background-image: url("images/vprofile.jpg");
+            background-size: 100%;
+        }
+    </style>
+</head>
+<header>
+    <center>
+        <h1>Resume</h1>
+    </center>
+</header>
+
+<body>
+    <main>
+
+        <h2>Personal Information</h2>
+        <ul>
+            <li>Name</li>
+            <input type="text" name="t1" id="" ng-model="name" minlength="3" maxlength="8" required>
+            <class="error" ng-show="f1.t1.$touched && f1.t1.$invalid">this is required
+                <li>Date of Birth</li>
+                <label for="start"></label>
+                <input type="date" id="start" name="trip-start" value="YYYY-MM-DD">
+                <li>Residential address</li>
+                <input placeholder="Address">
+                <li>Email</li>
+                <form> <label for="email"></label>
+                    <input type="email" name="t2" id="" ng-model="email" required>
+                    <class="error" ng-show="f1.t2.$touched && f1.t2.$invalid">this is required </form>
+                <li>Phone Number</li>
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></ul>
+        <h2>Skills</h2>
+        <p>
+            <ul>
+                <li>Helping people by giving Medicines</li>
+                <li>Help care for animals at your local animal shelter. Tasks include feeding, cleaning, and playing with animals.</li>
+                <li>Help maintain a local community garden. Tasks include planting, weeding, and watering.</li>
+        </p>
+        </ul>
+        <a href="thankyou.html">Submit</a>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>volunteeropportunities</title>
+    <style>
+        body {
+            background-image: url("images/vopportunities.avif");
+            background-size: 100%;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 0 auto
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        
+        input[type="text"],
+        select {
+            font-size: 18px;
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        button[type="submit"] {
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #444;
+        }
+        
+        .opportunity {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .opportunity h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .opportunity p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About US</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact us</a>
+            <div class="dropdown">
+                <button class="dropbtn">NGO volunteer
+            <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="dropdown-content">
+                    <a href="vopportunities.html">volunteeropportunities</a>
+                    <a href="volunteerprofile.html">volunteerprofile</a>
+                </div>
+            </div>
+
+            <div class="navbar" style="float: right;">
+                <a href="home.html">Logout</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Volunteer Opportunities</h1>
+        <p>Find local volunteer opportunities and make a positive impact on the world.</p>
+        <form>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location">
+            <label for="interests">Interests:</label>
+            <select id="interests" name="interests">
+                <option value="animals">Animals</option>
+                <option value="environment">Environment</option>
+                <option value="health">Health</option>
+                <option value="education">Education</option>
+                <option value="arts">Arts</option>
+        </select>
+            <button type="submit">Search</button>
+        </form>
+
+        <section>
+            <div class="job">
+                <h2>Volunteer for Cyclone Effects</h2>
+                <p>Location: Tamilnadu</p>
+                <p>Skills Required: Helping people by giving Medicines</p>
+                <p>Time commitment: 12 hours per week</p>
+                <a href="oppselecting.html">Apply</a>
+                <hr>
+                <h2>Animal Shelter Volunteer</h2>
+                <p>Location: Hyderabad</p>
+                <p>Skills Required: Help care for animals at your local animal shelter. Tasks include feeding, cleaning, and playing with animals.</p>
+                <p>Time commitment: 2 hours per week</p>
+                <a href="oppselecting.html">Apply</a>
+                <hr>
+                <h2>Community Garden Volunteer</h2>
+                <p>Location: Andhra Pradesh</p>
+                <p>Skills Required: Help maintain a local community garden. Tasks include planting, weeding, and watering.</p>
+                <p>Time commitment: 4 hours per week</p>
+                <a href="oppselecting.html">Apply</a>
+                <hr>
+                <h2>Tutoring Volunteer</h2>
+                <p>Location: Delhi</p>
+                <p>Skills Required: Help students with their homework and provide academic support at a local school or community center.</p>
+                <p>Time commitment: 2 hours per week</p>
+                <a href="oppselecting.html">Apply</a>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,482 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*------------------------------------------------NAVBAR----------------------------------------*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+}
+
+
+/*------------------------------------------------MAIN----------------------------------------*/
+
+.main {
+    background-image: url("images/back.jpg");
+    /* Set background image */
+    background-size: cover;
+    /* Scale the image to cover the entire section */
+    background-position: center center;
+    /* Center the image */
+    height: 500px;
+    /* Set height */
+    display: flex;
+    /* Use flexbox to center content */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+}
+
+.main_content {
+    text-align: center;
+    /* Center text */
+    color: white;
+    /* Set text color */
+    font-size: 24px;
+    /* Set font size */
+    max-width: 800px;
+    /* Set maximum width */
+    margin: 0 auto;
+    /* Center content horizontally */
+}
+
+.main_content h2 {
+    margin-bottom: 40px;
+    /* Add margin to bottom of heading */
+}
+
+.main_content span {
+    font-size: 32px;
+    /* Increase font size */
+}
+
+.btn {
+    margin-top: 40px;
+    /* Add margin to top of button */
+}
+
+.btn a {
+    display: inline-block;
+    /* Make link a block element */
+    background-color: white;
+    /* Set background color */
+    color: #333;
+    /* Set text color */
+    padding: 12px 24px;
+    /* Add padding */
+    border-radius: 5px;
+    /* Add rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 20px;
+    /* Increase font size */
+    font-weight: bold;
+    /* Add bold font weight */
+    transition: background-color 0.2s ease;
+    /* Add transition effect */
+}
+
+.btn a:hover {
+    background-color: #eee;
+    /* Set background color on hover */
+}
+
+
+/*------------------------------------------------SIDE----------------------------------------*/
+
+.side {
+    background-color: rgba(0, 0, 0, 0.966);
+    display: flex;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.side .left {
+    width: 50%;
+    float: left;
+}
+
+.side .left img {
+    float: left;
+    width: 100%;
+}
+
+.side .right {
+    background-color: rgba(0, 0, 0, 0.966);
+    width: 50%;
+    float: right;
+}
+
+.side .right h2 {
+    margin-top: 8%;
+    font-size: 250%;
+}
+
+.side .right p {
+    margin-left: 15%;
+    width: 70%;
+    font-size: 147%;
+    margin-top: 6%;
+}
+
+.side .right .side_btn {
+    margin-top: 4%;
+}
+
+.side .right .side_btn a {
+    text-decoration: none;
+    font-size: large;
+    margin: 32%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 4px double whitesmoke;
+    transition: 0.5s;
+}
+
+.side .right .side_btn a:hover {
+    background-color: rgb(79, 255, 88);
+    color: black;
+    font-weight: bolder;
+    border: none;
+    border: 4px solid green;
+    transition: 0.5s;
+}
+
+
+/*--------------------------------------------HOW WE HELP----------------------------------------*/
+
+.product {
+    float: left;
+    background-image: url("images/poor.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    height: 100vh;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.product h2 {
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product .product_container {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.product .product_container .item {
+    width: 33%;
+    margin: 10px;
+    height: 10%;
+    background-color: black;
+    opacity: 80%;
+    border-radius: 50%;
+}
+
+.product .product_container .item:hover {
+    box-shadow: 0px 3px 65px 0px rgb(255, 189, 165);
+}
+
+.product .product_container .item .item_img {
+    width: 60%;
+    height: 20%;
+    overflow: hidden;
+    margin-left: 23%;
+}
+
+.product .product_container .item .item_img img {
+    width: 100%;
+    height: 10%;
+}
+
+.product .product_container .item .item_content {
+    text-align: center;
+}
+
+.product .product_container .item .item_content h3 {
+    font-size: 25px;
+    line-height: 2px;
+    color: rgb(79, 255, 88);
+    font-weight: bolder;
+}
+
+.product .product_container .item .item_content p {
+    font-size: 20px;
+    line-height: 25px;
+    width: 80%;
+    text-align: center;
+    padding-left: 20%;
+}
+
+
+/*--------------------------------------------FOOTER----------------------------------------*/
+
+footer {
+    background-color: black;
+    padding: 30%;
+    display: inline-block;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+footer .doc {
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 5%;
+}
+
+footer .doc h3 {
+    color: rgb(255, 226, 243);
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+    line-height: 130px;
+}
+
+footer .doc a {
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 25px;
+}
+
+footer .doc a:hover {
+    color: white;
+}
+
+footer .contact {
+    width: 20%;
+    text-align: center;
+    text-align: left;
+}
+
+footer .contact h3 {
+    color: rgb(255, 226, 243);
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+    line-height: 130px;
+}
+
+footer .contact {
+    display: inline-block;
+}
+
+footer .contact a {
+    display: block;
+    font-size: 20px;
+    line-height: 38px;
+    text-decoration: none;
+    ;
+    color: rgba(247, 193, 224, 0.904);
+    margin: 10px;
+}
+
+footer .contact a:hover {
+    color: white;
+}
+
+
+/*------------------------------------------------MAIN_ABOUT----------------------------------------*/
+
+.main_about {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("images/about.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    margin-top: -3.5%;
+}
+
+.main_about .main_content_about h2 {
+    color: white;
+    font-size: 390%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20%;
+}
+
+.product_about {
+    float: left;
+    background-image: url("images/about_back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    height: 100vh;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+
+/*--------------------------------------------DONATE----------------------------------------*/
+
+.donate {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("images/donate_back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.donate .donate_container {
+    background-color: black;
+    opacity: 80%;
+    text-align: center;
+    margin: 0% 20% 0% 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.donate .donate_container h1 {
+    color: rgb(79, 255, 88);
+    line-height: 100px;
+}
+
+.donate .donate_container p {
+    font-size: large;
+    width: 80%;
+    text-align: center;
+    padding-left: 20%;
+}
+
+.donate .donate_container .second {
+    padding-bottom: 10%;
+}
+
+.donate .side_btn a {
+    text-decoration: none;
+    font-size: 120%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: 2px double whitesmoke;
+    transition: 0.5s;
+}
+
+.donate .side_btn a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    border: 4px solid green;
+    transition: 0.5s;
+}
+
+
+/*--------------------------------------------CONTACT---------------------------------------*/
+
+.contact_container {
+    padding: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("images/about_back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 180vh;
+    color: white;
+}
+
+.contact_container h2 {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 33px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.contact_container .g_map {
+    border: 10px solid white;
+}
+
+.contact_container .contact_content {
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.contact_container .contact_content p {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 25px;
+}

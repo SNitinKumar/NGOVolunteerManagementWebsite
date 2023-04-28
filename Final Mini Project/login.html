@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Login Page </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: black;
+            background-image: url('images/about_back.jpg');
+        }
+        
+        button {
+            background-color: whitesmoke;
+            width: auto;
+            color: black;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        form {
+            border: 3px
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 30%;
+            margin: 8px 0;
+            padding: 6px;
+            display: inline-block;
+            border: 2px solidblack;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        
+        button:hover {
+            opacity: 0.7;
+        }
+        
+        .cancelbtn {
+            width: auto;
+            padding: 6px;
+            margin: 10px 5px;
+        }
+        
+        .container {
+            width: 30%;
+            padding: 25px;
+            background-color: sandybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1> Volunteer Login Form </h1>
+    </center>
+    <hr>
+    <center>
+        <div class="container">
+            <form action="index.html">
+                <label>Username : </label>
+                <input type="text" name="t1" id="" ng-model="name" minlength="3" maxlength="8" required>
+                <class="error" ng-show="f1.t1.$touched && 1.t1.$invalid"><br><br>
+                    <label>Password : </label>
+                    <input type="password" name="t3" id="" ng-model="password" minlength="6" required>
+                    <class="error" ng-show="f1.t3.$touched && f1.t3.$invalid"><br><br>
+                        <button type="submit">Login</button>
+                        <input type="checkbox" checked="checked"> Remember me <br><br>
+                        <button type="button" class="cancelbtn"> Cancel</button> Forgot <a href="forgotpassword.html"> password? </a><br><br>
+                        <button type="button" class="cancelbtn"> Not having Account?</button> <a href="signup.html"> Register </a> </div>
+        </form>
+        </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        
+        form {
+            background-color: sandybrown;
+            border-radius: 5px;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <style>
+        body {
+            background-image: url("images/about_back.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Register</h1>
+    </center>
+
+    <form>
+        <div>
+            <label for="username"><b>Username</b></label>
+            <input type="text" name="t1" id="" ng-model="name" minlength="3" maxlength="8" required>
+            <class="error" ng-show="f1.t1.$touched && 1.t1.$invalid"><br><br>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="t2" id="" ng-model="email" required>
+                <class="error" ng-show="f1.t2.$touched && f1.t2.$invalid"><br><br>
+
+                    <label for="pwd"><b>Password</b></label>
+                    <input type="password" name="t3" id="" ng-model="password" minlength="6" required>
+                    <class="error" ng-show="f1.t3.$touched && f1.t3.$invalid"><br><br>
+
+                        <button type="submit">Register</button><br><br>
+        </div>
+        <div>
+            <p>Already have an account? <a href="login.html">Log in</a>.</p>
+        </div>
+    </form>
+
+</body>
+
+</html>
